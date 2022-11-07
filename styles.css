@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+* {
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: hsl(210, 60%, 98%);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+}
+
+.content {
+    width: 50%;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 10px hsl(205, 33%, 90%);
+    margin: 3rem;
+
+}
+
+.head {
+    display: flex;
+    max-width: 100%;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.head p {
+    max-width: 100%;
+    font-size: 14px;
+    gap: 10px;
+}
+
+.head p:hover {
+    cursor: pointer;
+    color: hsl(219, 82%, 45%);
+}
+
+.head h2 {
+    width: 80%;
+}
+
+#alert {
+    background-color: rgb(21, 21, 87);
+    color: white;
+    margin-left: 5px;
+    padding: 0px 7px;
+    border-radius: 6px;
+}
+
+.notify {
+    display: flex;
+    max-width: 100%;
+    margin: 5px 1rem;
+    border-radius: 5px;
+}
+
+#rizky {
+    background-color: #fff;
+    display: flex;
+    max-width: 100%;
+    margin: 5px 1rem;
+    border-radius: 5px;
+}
+
+.notify-text {
+    font-weight: 700;
+}
+
+.notify-text:hover {
+    color: hsl(219, 85%, 18%);
+}
+
+.notify:hover {
+    background-color: hsl(211, 68%, 94%);
+    cursor: pointer;
+}
+
+.unread {
+    background-color: hsl(210, 60%, 98%);
+}
+
+.pic,
+.message,
+.read {
+    max-width: 100%;
+
+
+}
+
+.pic,
+.read {
+    width: 10%;
+    margin: 1rem 0 1rem 1rem;
+}
+
+.message {
+    width: 80%;
+    font-size: 14px;
+    display: block;
+}
+
+.read {
+    width: 10%;
+
+}
+
+.dot {
+    height: 8px;
+    width: 8px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.inbox{
+    border: 1px solid lightgray;
+    background-color: white;
+    padding: 10px;
+    border-radius: 3px;
+    gap: 5px;
+}
+
+.inbox:hover {
+    background: #fff;
+    background-color: hsl(211, 68%, 94%);
+    cursor: pointer;
+}
+
+.name {
+    font-weight: 800;
+}
+
+.name:hover {
+    color: hsl(220, 74%, 20%);
+    cursor: pointer;
+}
+
+.notif-text {
+    color: hsl(219, 85%, 18%);
+    font-weight: 800;
+}
+
+/* .notif-text:hover {
+    color: hsl(219, 12%, 42%);
+} */
+
+@media (max-width: 900px) {
+    .content {
+        width: 100%;
+        margin: 0;
+    }
+
+    .head h2 {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 540px) {
+
+    .head h2,
+    .head p {
+        width: 50%;
+    }
+
+    .head p {
+        text-align: right;
+    }
+
+}
+
+@media (max-width: 410px) {
+    * {
+        font-size: 10px;
+    }
+
+    .head h2 {
+        font-size: 14px;
+    }
+
+    .head p {
+        font-size: 10px;
+    }
+
+}
